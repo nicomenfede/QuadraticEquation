@@ -4,7 +4,10 @@ public class QuadraticEquation
 {
     public static Tuple<double, double> FindRoots(double a, double b, double c)
     {
-        throw new NotImplementedException("Waiting to be implemented.");
+        var first = (-(b) + Math.Sqrt((b * b) - (4 * a * c))) / (2 * a);
+        var second = (-(b) - Math.Sqrt((b * b) - (4 * a * c))) / (2 * a);
+
+        return Tuple.Create(first, second);
     }
 
     public static void Main(string[] args)
